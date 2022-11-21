@@ -1,0 +1,43 @@
+.about__list{
+    display: flex;
+    margin-left: -30px;
+}
+
+.about__item{
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+}
+
+.about__icon{
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px 4px;
+    border-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    padding-top: var(--pading-section);
+    padding-bottom: var(--pading-section);
+}
+
+.about__header{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-color);
+    margin-bottom: 10px;
+}
+
+.about__text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    width: 270px;
+}

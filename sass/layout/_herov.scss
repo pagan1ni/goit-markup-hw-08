@@ -1,0 +1,53 @@
+.herov{
+    background-color: var(--background-color);
+    background-image:linear-gradient(
+        to right,
+        rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)),
+        url(../images/herov.jpg);
+    background-repeat: no-repeat;
+    padding: 200px 0px;
+    max-width: 1600px;
+    height: 600px;
+    }
+
+.herov-section{
+    margin: 0 auto;
+}
+
+.herov__header{
+    max-width: 696px;
+    max-height: 120px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+   
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--herov-color);
+    }
+
+.herov__btn{
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--herov-color);
+    background: var(--hover-focus);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
