@@ -4,10 +4,14 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-color);
+    @media  (min-width: 1200px) {
+        font-size: 20px;
+        line-height: 1.15;
+    }
 }
 
 .contact-form__label {

@@ -6,18 +6,38 @@
 }
 
 .footer .container{
-    display: flex;
     align-items: baseline;
+    text-align: center;
+    @media  (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @media  (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-between;
+        text-align: left;
+    }
 }
 
 .footer-container{
-    display: block
+    @media  (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .footer-soc-link{
     display: block;
-    margin-left: 70px;
-    padding-top: 12px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @media  (min-width: 768px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    @media  (min-width: 1200px) {
+        padding-top: 12px;
+    }
 }
 
 .logo--white {
@@ -29,15 +49,24 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--herov-color);
-    margin-bottom: 9px;
-    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-top: 28px;
+    @media  (min-width: 1200px) {
+        line-height: 1.71;
+        margin-bottom: 9px;
+    }
+    
 }
 
 .footer__item:not(:last-child){
-    margin-bottom: 9px;
+    margin-bottom: 12px;
+    @media  (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer__tel,
@@ -46,11 +75,15 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     color: rgba(255, 255, 255, 0.6);
     transition-duration: var(--time--);
     transition-timing-function: var(--timing-function);
+    @media  (min-width: 1200px) {
+        line-height: 1.71;
+    }
 }
 
 .footer-soc-link__header{
@@ -59,11 +92,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .footer-soc-link__list{
     display: flex;
+    justify-content: center;
 }
 
 .footer-soc-link__item + .footer-soc-link__item{
@@ -71,13 +105,13 @@
 }
 
 .footer-soc-link__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     background-color:rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #FFFFFF;
     transition-duration: var(--time--);
     transition-timing-function: var(--timing-function);

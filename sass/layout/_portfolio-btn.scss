@@ -1,16 +1,33 @@
 .portfolio{
-    padding-top: var(--pading-section);
-    padding-bottom: var(--pading-section);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media  (min-width: 1200px) {
+        padding-top: var(--pading-section);
+        padding-bottom: var(--pading-section);
+    }
+    
 }
 
 .btn-list{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media  (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media  (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+    
 }
 
 .btn-list__item:not(:last-child){
     margin-right: 8px;
+    margin-bottom: 15px;
+    @media  (min-width: 768px) {
+        margin-bottom: 0px;
+    }
 }
 
 .btn-list__btn{

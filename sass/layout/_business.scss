@@ -1,22 +1,50 @@
 .business{
-    padding-bottom: var(--pading-section);
+    @media  (max-width: 1199px) {
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        top: 0;
+    }
+   
+    @media  (min-width: 1200px) {
+        padding-bottom: var(--pading-section);
+    }
+}
+
+.business__header{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+    margin-bottom: 50px;
 }
 
 .business__list{
-    display: flex;
-    margin-left: -30px;
+    @media  (min-width: 1200px) {
+        display: flex;
+        margin-left: -30px;
+    }
 }
 
 .business__item{
+    @media  (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
+    }
 }
 
 .business__wrap{
+    @media  (min-width: 1200px) {
     position: relative;
+    }
 }
 
 .business__up-text{
+    @media  (min-width: 1200px) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -33,5 +61,5 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    
+    }
 }

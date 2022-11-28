@@ -1,16 +1,29 @@
 .about__list{
-    display: flex;
-    margin-left: -30px;
+    margin-bottom: -30px;
+    @media  (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+    
 }
 
 .about__item{
-    flex-basis: calc((100% - 120px) / 4);
-    margin-left: 30px;
+    margin-bottom: 30px;
+    @media  (min-width: 768px) {
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+    }
+    @media  (min-width: 1200px) {
+        width: calc(100% / 4 - 30px);
+        margin-left: 30px;
+    }
+    // flex-basis: calc((100% - 120px) / 4);
+    // margin-left: 30px;
 }
 
 .about__icon{
     margin-bottom: 30px;
-    width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px 4px;
@@ -21,17 +34,26 @@
 }
 
 .about{
-    padding-top: var(--pading-section);
-    padding-bottom: var(--pading-section);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media  (min-width: 1200px) {
+        padding-top: var(--pading-section);
+        padding-bottom: var(--pading-section);
+    }
 }
 
 .about__header{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--header-color);
     margin-bottom: 10px;
+    @media  (min-width: 768px) {
+        text-align:left;
+    }
+
 }
 
 .about__text{
@@ -39,5 +61,5 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    width: 270px;
+
 }
