@@ -28,6 +28,8 @@
 }
 
 .header_burger-menu{
+    border: 0px;
+    background-color: var(--herov-color);
     @media  (min-width: 768px) {
         display: none;
     }
@@ -129,11 +131,6 @@
     fill: currentColor;
 }
 
-.header_burger-menu{
-    border: 0px;
-    background-color: var(--herov-color);
-    padding: 10px;
-}
 
 .header_burger-menu:focus-within .header__icon-menu,
 .header_burger-menu:hover .header__icon-menu {

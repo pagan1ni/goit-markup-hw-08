@@ -113,6 +113,10 @@ body {
           justify-content: space-between;
 }
 
+.header_burger-menu {
+  border: 0px;
+  background-color: var(--herov-color);
+}
 @media (min-width: 768px) {
   .header_burger-menu {
     display: none;
@@ -227,12 +231,6 @@ body {
 .connect__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header_burger-menu {
-  border: 0px;
-  background-color: var(--herov-color);
-  padding: 10px;
 }
 
 .header_burger-menu:focus-within .header__icon-menu,
@@ -547,18 +545,20 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media (min-width: 1200px) {
   .team__header {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
 .team__img-container {
   padding: 30px 0px;
-  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  border: 1px solid #F5F4FA;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -1042,6 +1042,7 @@ body {
 .btn-list__btn {
   padding: 6px 22px;
   border-radius: 4px;
+  border: none;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
